@@ -6,7 +6,7 @@ goes through a function here, so the UI code stays focused on layout.
 from __future__ import annotations
 import requests
 
-BACKEND_URL = "http://127.0.0.1:8000"
+BACKEND_URL = "https://ai-data-analyst-clbq.onrender.com"
 TIMEOUT_SECONDS = 30
 
 
