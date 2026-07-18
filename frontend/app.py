@@ -35,8 +35,8 @@ st.markdown(
 
 if not api.check_backend_alive():
     st.error(
-        "Can't reach the backend at http://127.0.0.1:8000. "
-        "Make sure `uvicorn main:app --reload --port 8000` is running in another terminal."
+        f"Can't reach the backend at {api.BACKEND_URL}. "
+        "It may be waking up from sleep (free-tier cold start can take up to a minute) — please refresh in a moment."
     )
     st.stop()
 

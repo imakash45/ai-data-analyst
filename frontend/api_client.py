@@ -49,7 +49,7 @@ def run_eda(session_id: str) -> dict:
 
 def check_backend_alive() -> bool:
     try:
-        r = requests.get(f"{BACKEND_URL}/", timeout=5)
+        r = requests.get(f"{BACKEND_URL}/", timeout=60)
         return r.status_code == 200
     except Exception:
         return False
